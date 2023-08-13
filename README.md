@@ -1,99 +1,198 @@
-## GitHub Action for generating a contribution graph with a snake eating your contributions.
-## GitHub Action для создания графика вкладов со змеей, пожирающей ваши взносы.
+![](assets/imgs/Bottom_up.svg)
 
-name: generate animation
+<!--   my-icons -->
+<p align="center">
+    <a href="https://github.com/python/cpython"><img src="https://img.shields.io/badge/Python-3.10-FF1493.svg"></a>
+    <a href="https://github.com/duanmushuangquan/BEV_code/graphs/contributors"><img src="https://img.shields.io/github/contributors/duanmushuangquan/BEV_code?color=blue"></a>
+    <a href="https://github.com/duanmushuangquan/BEV_code/stargazers"><img src="https://img.shields.io/github/stars/duanmushuangquan/BEV_code.svg?logo=github"></a>
+    <a href="https://github.com/duanmushuangquan/BEV_code/network/members"><img src="https://img.shields.io/github/forks/duanmushuangquan/BEV_code.svg?color=blue&logo=github"></a>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=duanmushuangquan.BEV_code" alt="visitors"/>   
+  
+</p>
 
-on:
-  # run automatically every 12 hours
-  schedule:
-    - cron: "0 */12 * * *"
-
-  # allows to manually run the job at any time
-  workflow_dispatch:
-
-  # run on every push on the master branch
-  push:
-    branches:
-    - main
+  <!-- my-header-img -->
+<!-- ![](./src/header_.png)
+<a href="https://www.python.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" align="right" height="48" width="48" ></a>
 
 
+  <!-- my-ticker --> 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&pause=2000&vCenter=true&width=500&lines=I+was+a+ship+designer+before;and+I+worked+with+tribon%2C+AM+CAD%2C+C%23%EF%BC%81;now!+I+use+c%2B%2B%2C+Pytorch%2C+TensorRT+++)](https://git.io/typing-svg)
 
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+<!--   my-kaggle     
+### My achievements on [kaggle](https://www.kaggle.com/andrej0marinchenko):
 
-    steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: Generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v2
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: Push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v2.6.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+![competition_light](https://road-to-kaggle-grandmaster.vercel.app/api/badges/andrej0marinchenko/competition/light)
+![dataset](https://road-to-kaggle-grandmaster.vercel.app/api/badges/andrej0marinchenko/dataset/light)
+![notebook](https://road-to-kaggle-grandmaster.vercel.app/api/badges/andrej0marinchenko/notebook/light)
+![discussion](https://road-to-kaggle-grandmaster.vercel.app/api/badges/andrej0marinchenko/discussion/light)
+-->
 
-#name: Generate Snake
-#
-## Controls when the action will run. This action runs every 6 hours.
-## Управляет запуском действия. Это действие выполняется каждые 6 часов.
-#on:
-#  schedule:
-#      # every 6 hours
-#    - cron: "0 */6 * * *"
-#
-## This command allows us to run the Action automatically from the Actions tab.
-## Эта команда позволяет нам автоматически запускать действие с вкладки «Действия».
-#  workflow_dispatch:
-#
-## The sequence of runs in this workflow:
-## Последовательность прогонов в этом рабочем процессе:
-#jobs:
-#  # This workflow contains a single job called "build"
-#  build:
-#    # The type of runner that the job will run on
-#    runs-on: ubuntu-latest
-#    timeout-minutes: 10
-#    # Steps represent a sequence of tasks that will be executed as part of the job
-#    steps:
-#
-#    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-##      - uses: actions/checkout@v2
-#      - uses: Platane/snk@aebc3a92857730857d5a96010a3538f16bbec662  # v3.0.0
-#
-#    # Generates the snake
-#      - uses: Platane/snk@aebc3a92857730857d5a96010a3538f16bbec662  # v3.0.0
-#        id: snake-gif
-#        with:
-#          github_user_name: BEPb
-#          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
-#          gif_out_path: dist/github-contribution-grid-snake.gif
-#          svg_out_path: dist/github-contribution-grid-snake.svg
-#
-#     # show the status of the build. Makes it easier for debugging (if there's any issues).
-#      - run: git status
-#
-#      # Push the changes
-#      - name: Push changes
-#        uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          branch: master
-#          force: true
-#
-#      - uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
-#        with:
-#          # the output branch we mentioned above
-#          target_branch: output
-#          build_dir: dist
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+<!--   my-skils -->
+
+| Property                                        | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Language / IDE**                              | ![Python Badge](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=Python&logoColor=white) ![Python Badge](https://img.shields.io/badge/-C++-3776AB?style=flat&logo=cplusplus&logoColor=white) ![Pycharm Badge](https://img.shields.io/badge/-Pycharm-3776AB?style=flat&logo=Pycharm&logoColor=white) ![Pycharm Badge](https://img.shields.io/badge/-vscode-3776AB?style=flat&logo=visualstudio&logoColor=white)  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Domain Knownledge**                           | [![Machine Learning Badge](https://img.shields.io/badge/-Deep%20Learning-01D277?style=flat&logoColor=white)](https://github.com/duanmushuangquan) [![TensorRT](https://img.shields.io/badge/-TensorRT%20deploy-FAB040?style=flat&logoColor=white)](https://github.com/duanmushuangquan/cudatrtpyCode) ![CV](https://img.shields.io/badge/-CV%20-FF6600?style=flat&logoColor=white) [![Automatic driving](https://img.shields.io/badge/-Automatic%20driving-AA6122?style=flat&logoColor=white)](https://github.com/duanmushuangquan/BEV_code)  ![Ship Engineering Development Badge](https://img.shields.io/badge/-Ship%20Engineering-4C8CBF?style=flat&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **CI / CD**                                     | [![CSDN](https://img.shields.io/badge/-CSDN-2088FF?style=flat&logo=Markdown&logoColor=white)](https://mp.csdn.net/mp_blog/manage/article?spm=1011.2124.3001.5298)  ![飞书](https://img.shields.io/badge/-FeiShu%20-2088FF?style=flat&logoColor=white)   [![Github Badge](https://img.shields.io/badge/-Github%20-2088FF?style=flat&logo=Github&logoColor=white)](https://github.com/duanmushuangquan) [![Github Actions Badge](https://img.shields.io/badge/-Git%20-2088FF?style=flat&logo=Git&logoColor=white)](https://github.com/duanmushuangquan)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Databases**                                   |![Pycharm Badge](https://img.shields.io/badge/-Neo4j-3776AB?style=&logo=neo4j&logoColor=white) ![Pycharm Badge](https://img.shields.io/badge/-MYSQL-AABBZ00?style=&logo=mysql&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **OS**                                          | <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b44114213a5a462903bd69611bb6846f1dc41fe6f3230bd37c67c3d4eb65f08c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d57696e646f77732d626c61636b3f7374796c653d666c61742d737175617265266c6f676f3d77696e646f7773266c6f676f436f6c6f723d626c7565"><img src="https://camo.githubusercontent.com/b44114213a5a462903bd69611bb6846f1dc41fe6f3230bd37c67c3d4eb65f08c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d57696e646f77732d626c61636b3f7374796c653d666c61742d737175617265266c6f676f3d77696e646f7773266c6f676f436f6c6f723d626c7565" alt="Windows" data-canonical-src="https://img.shields.io/badge/-Windows-black?style=flat-square&amp;logo=windows&amp;logoColor=blue" style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9c4bc049e33f41f122342a1714ccf872c34098a9f2c593c33c2322cf0129fa04/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5562756e74752d626c61636b3f7374796c653d666c61742d737175617265266c6f676f3d7562756e7475"><img src="https://camo.githubusercontent.com/9c4bc049e33f41f122342a1714ccf872c34098a9f2c593c33c2322cf0129fa04/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5562756e74752d626c61636b3f7374796c653d666c61742d737175617265266c6f676f3d7562756e7475" alt="Ubuntu" data-canonical-src="https://img.shields.io/badge/-Ubuntu-black?style=flat-square&amp;logo=ubuntu" style="max-width: 100%;"></a>                                                                                                                                                                                                                                                                           |
+| **Tools & Platform**                            | ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white) ![unity](https://img.shields.io/badge/unity-F9AB00?style=for-the-badge&logo=unity&color=000000) ![CSS3](https://img.shields.io/badge/OpenMMLab-1572B6?style=for-the-badge&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Machine Learning / Deep Learning frameworks** | ![Jupyter Notebook](http://img.shields.io/badge/-Jupyter%20Notebook-eee?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAMAAAARSr4IAAACGVBMVEVhYmJdYWT/fBfzdyaqdlV2dnfcdC9udnz5dyKUaU3wdicCO2CzZzVdUkpOTk5MTk60ZzUAAP/XcC3fcivgciv/lArAajLqdSifYjrydyajnJjEjWifnp3FjGcAAACenp52dnd2dnd2dndhYmJhYmIxW3bzdybzdybzdybzdybzdyb/dxpydnl2dnd2dndhYmJgYmOda0r0dyXzdybzdybzdybudymQdmZldoJQYGmRaU7ydyfzdybzdybzdybzdybzdybzdybzdyb1dyX9dx/2dyXzdybzdybzdyb+eiPzdybzdybzdyb/ghz8eSQ3SFT/tABNTk5HTFBMTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5NTk5GTFBOTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5NTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5NTk5NTk5UUEx5WUMAOGRMTU9OTk5OTk5OTk5OTk5OTk5FTFAXQFvBajK8aTP2eCX0dyb0dyb0dybzdyb4eCXzdybzdybzdybzdybzdybzdybzdybzdybzdyb6dB3zdyXzdybzdybzdybzdybzdybzdybzdyaenp6cn6HKimD0dyXzdybzdybzdybzdybzdybzdyaenp6enp6dn6Dzdybzdyaenp6enp6enp6enp7zdyaenp7///9F1GYlAAAAsHRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHCVho4Ax1RcnFOFz/ibFmwHXPc/thwKwkKJpfbqn1oaX+uighRdSIDAyV6TAQcAgIVHBMbKjIgEzBTHCsbLUBdQlhiTWBlR1xkaEVIR1tPbFEvF0pJNR9AFAQIMwgfKQUDBwgDBEsuMkcCLLSUKBsqT5iwNcX47N/g7cAxPmUqZq/OzaxiExPJYgQPCJjcP9lVnrgAAAClSURBVAjXVcyxSoIBAEXh+xkhEkFr6hD0AM5BkbQ3ODaEY4uDSENCS1BThI/h4v4TERG0NzZHvoAQ0SDV8FvkmS6cw5UgSTR5s83rlgUvWuA8l/Bs59eYbXhS28VdUt1H4dA9Eu1HexUdS3T/7Y81vXJ9rQicLcxoAK64hvd1fWwOeDgoy+JW3bCs56tOonnxd3ycGKt9nt7I91GShgn60yRJI/kBP8EfEEdOa6sAAAAASUVORK5CYII=&logoColor=F37626) ![Scikit-learn](http://img.shields.io/badge/-Scikit--Learn-eee?style=flat-square&logo=scikit-learn&logoColor=e26d00) ![PyTorch](http://img.shields.io/badge/-PyTorch-eee?style=flat-square&logo=pytorch&logoColor=EE4C2C) ![TensorFlow](http://img.shields.io/badge/-TensorFlow-eee?style=flat-square&logo=tensorflow&logoColor=FF6F00) |
+
+<!--   GitHub stats graph -->
+### 📈 GitHub Activity Graph:
+<!-- [![BEPb's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=BEPb&theme=github-compact)](https://github.com/BEPb/github-readme-activity-graph) -->
+![BEPb's github activity graph](https://raw.githubusercontent.com/duanmushuangquan/duanmushuangquan/output/github-contribution-grid-snake.svg)
+| .                                                                                                                                       | .                                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| ![BEPb's github stats](https://github-readme-stats.vercel.app/api?username=BEPb&show_icons=true&theme=radical&include_all_commits=true) | ![Quiec's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=BEPb&theme=radical&layout=compact) |
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=BEPb"></img>
+
+<!--   profile-green-animate -->
+![](./profile-3d-contrib/profile-green-animate.svg)
+
+<!--   grid-snake -->
+![](https://github.com/BEPb/BEPb/blob/output/github-contribution-grid-snake.svg)
+
+<!--   skyline 
+<a href="https://skyline.github.com/BEPb/2022"><img src="./assets/2022.gif" alt="" width="auto" height="auto" /></a>
+-->
+
+<!--  2d history skills -->
+<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=BEPb" width="auto"></img>
+
+**📫 How to Reach me:**
+<p align="left">
+<a href="https://twitter.com/noname85071193" target="blank"><img align="center" src="https://raw.githubusercontent.com/BEPb/BEPb/master/assets/twitter.svg" alt="BEPb" height="30" width="30" /></a>
+<a href="https://linkedin.com/in/andrej-marinchenko-0445b7214" target="blank"><img align="center" src="https://raw.githubusercontent.com/BEPb/BEPb/master/assets/linkedin.svg" alt="BEPb" height="30" width="30" /></a>
+<a href="mailto:andrej.marinchenko@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/BEPb/BEPb/master/assets/gmail.svg" alt="Gmail" height="30" width="30" /></a>
+<a href="https://api.whatsapp.com/send?phone=+375333333355" alt="Connect on Whatsapp"> <img src="https://img.shields.io/badge/WHATSAPP-%2325D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white" /> </a>
+</p>
+
+<div align="center">
+<summary>Trophy: Github Profile Trophy</summary>
+</div>
+
+<p align="center"> 
+<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=BEPb" alt="BEPb" /></a>
+</p>
+
+
+
+
+   <!--machine-learning-->
+```mermaid
+graph TD;
+    machine-learning-->Data;
+    machine-learning-->Algorithms;
+    machine-learning-->Statistical-Models;
+    machine-learning-->Feature-Engineering;
+    machine-learning-->Evaluation-Metrics;
+    machine-learning-->Deployment;
+   ```
+   
+ 
+
+
+<div align="center">
+<summary>Trophy: Hackerrank Profile Trophy</summary>
+</div>
+
+<p align="center"> 
+
+<img src="./src/badges_hackerrank.png" alt="Metrics" width="57%"> <img src="./src/hackerrank-logo.jpg" alt="Metrics" 
+width="30%">
+
+</p>
+
+
+
+<img src="/github-metrics.svg" alt="Metrics" width="100%">
+
+
+
+
+
+
+<!-- Belarus - My Home-->
+  
+ ```geojson
+{
+ "type": "FeatureCollection",
+ "features": [
+   {
+     "type": "Feature",
+     "id": 1,
+     "properties": {
+       "ID": 0
+     },
+     "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+         [
+             [23.5,53.9],
+             [32.6,52.6]
+         ]
+       ]
+     }
+   }
+ ]
+}
+
+```
+
+
+
+
+
+
+<p align="center"> 
+
+<img src="./src/credly0.png" alt="ibm" width="100%">
+<img src="./src/credly1.png" alt="ibm" width="100%">
+<img src="./src/credly2.png" alt="ibm" width="100%">
+
+</p>
+
+
+
+#### Thanks for visiting :heart:
+
+<p align="center"> 
+<img src="https://profile-counter.glitch.me/BEPb/count.svg">  
+
+counting of visitors to this page in this section started from May 8, 2022
+<a href="http://s01.flagcounter.com/more/ap7"><img src="https://s01.flagcounter.com/countxl/ap7/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BEPb/BEPb&type=Date)](https://star-history.com/#BEPb/BEPb&Date)
+
+
+
+### Profile Views
+counting of visitors to this page in this section started from June 12, 2022
+
+![](https://count.getloli.com/get/@BEPb.github.readme)
+</br>
+
+[MIT](LICENSE)
+
+
+</p>
+
+---
+  *If you liked my profile, you can Star ⭐ the repo and if you want to use this template you can Fork it and can use.* 
+---
+Would you ike to meet me?
+
+If you want to contribute to any of my repositories, feel free to submit PRs, issues and email me. Pick a slot if you'd like to meet me and chat about proposals and ideas - but make sure to describe the agenda
+
+---
+  *I use an automatic subscription control system. Thus, everyone who subscribes to me, I will subscribe to those and I will respond, and vice versa, I will remove all those who unsubscribe from me from among those who should be followed.* 
+---
+
+![](assets/Bottom_down.svg)
