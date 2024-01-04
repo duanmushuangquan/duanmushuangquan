@@ -16,7 +16,7 @@
 
 
   <!-- my-ticker --> 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&pause=2000&vCenter=true&width=500&lines=I+was+a+ship+designer+before;and+I+worked+with+tribon%2C+AM+CAD%2C+C%23%EF%BC%81;now!+I+use+c%2B%2B%2C+Pytorch%2C+TensorRT+++)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=300&pause=2000&vCenter=true&width=500&lines=If+you+want+to+learn+more+about+bevfusion+and+quantazition1;now!+join+us)](https://git.io/typing-svg)
 
 <!--   my-kaggle     
 ### My achievements on [kaggle](https://www.kaggle.com/andrej0marinchenko):
